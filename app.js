@@ -7,13 +7,13 @@ function getData() {
     xhttp.send()
     xhttp.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
-            let data = JSON.parse(this.responseText)
+            let data = JSON.parse(this.responseText)    
             data.forEach((item) => {
                 const slide = document.createElement('div')
                 slide.classList.add('slide')
                 slide.innerHTML = `
                     <div class="img-container">
-                        <img src=${item.image} alt=${item.name} class="profile">
+                        <img src=${item.image} alt="${item.name}" class="profile">
                     </div>
                     <div class="text-container">
                         <blockquote class="comment">" ${item.comment} "</blockquote>
