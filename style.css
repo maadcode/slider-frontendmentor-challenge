@@ -161,6 +161,10 @@ a {
     right: 0;
     background-image: url('./images/icon-next.svg');
 }
+
+.attribution {
+    text-align: center;
+}
         
 @media screen and (min-width: 600px) {
     .img-container {
